@@ -1,0 +1,65 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "launch": {
+            "configurations": [
+                {
+                    "name": "Python: Current File",
+                    "type": "python",
+                    "request": "launch",
+                    "env": {
+                        "PYTHONPATH": "."
+                    },
+                    "program": "${file}",
+                    "console": "integratedTerminal",
+                    "justMyCode": true
+                },
+                {
+                    "name": "Train model",
+                    "type": "python",
+                    "request": "launch",
+                    "env": {
+                        "PYTHONPATH": "."
+                    },
+                    "args": [
+                        "--epochs",
+                        "200",
+                        "--autoconvert"
+                    ],
+                    "program": "${workspaceFolder}/train.py",
+                    "console": "integratedTerminal",
+                    "justMyCode": true
+                },
+                {
+                    "name": "Evaluate model",
+                    "type": "python",
+                    "request": "launch",
+                    "env": {
+                        "PYTHONPATH": "."
+                    },
+                    "args": [],
+                    "program": "${workspaceFolder}/evaluate.py",
+                    "console": "integratedTerminal",
+                    "justMyCode": true
+                },
+                {
+                    "name": "Convert to ONNX",
+                    "type": "python",
+                    "request": "launch",
+                    "env": {
+                        "PYTHONPATH": "."
+                    },
+                    "args": [],
+                    "program": "${workspaceFolder}/convert.py",
+                    "console": "integratedTerminal",
+                    "justMyCode": true
+                }
+            ],
+            "compounds": []
+        }
+    }
+}
