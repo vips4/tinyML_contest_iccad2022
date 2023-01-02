@@ -2,6 +2,10 @@
 
 The official implementation of the VIPS4Lab @ UNIVR for the _2022 ACM/IEEE TinyML Design Contest at ICCAD_.
 
+<p align="center">
+    <img src="img/certificate.jpg" width="80%" height="80%" title="VIPS4Lab @ UNIVR certificate">
+</p>
+
 ## Results ##
 
 | Model     | F-1   | F-B   | SEN   | SPE   | BAC   | ACC   | PPV   | NPV   | Mn    | Ln   | Score  |
